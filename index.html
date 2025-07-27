@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prompt Puzzle Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="game-container">
+    <h1>🧠 AI Prompt Puzzle Game</h1>
+    <div id="question">Loading...</div>
+    <input type="text" id="answer" placeholder="Type your answer..." />
+    <button onclick="checkAnswer()">Submit</button>
+    <button onclick="resetGame()" class="reset-btn">🔁 Reset</button>
+    <div class="info">
+      <p>⏱ Time Left: <span id="timer">60</span>s</p>
+      <p>⭐ Score: <span id="score">0</span></p>
+      <p>🚀 Level: <span id="level">1</span></p>
+    </div>
+  </div>
+
+  <!-- Spline 3D Model -->
+  <spline-viewer url="https://prod.spline.design/uoAfhEfQ5BKYKyXq/scene.splinecode"></spline-viewer>
+
+  <!-- 3D Floating Cards -->
+  <div class="floating-cards"></div>
+
+  <!-- 3D Rotating Cube -->
+  <div class="cube"></div>
+
+  <!-- Orbiting Spheres -->
+  <div class="orbit">
+    <span class="sphere"></span>
+    <span class="sphere"></span>
+    <span class="sphere"></span>
+  </div>
+</body>
+</html>
